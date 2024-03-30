@@ -8,10 +8,6 @@ driver.get("https://deepai.org")
 
 print(driver.title)
 
-txt = driver.find_element(By.XPATH, "//textarea")
-txt.send_keys("What is the meaning of life?\n")
-time.sleep(3)
-
 login = content = driver.find_element(By.ID, 'headerLoginButton')
 login.click()
 time.sleep(1)
