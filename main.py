@@ -8,7 +8,7 @@ driver.get("https://deepai.org")
 
 print(driver.title)
 
-login = content = driver.find_element(By.ID, 'headerLoginButton')
+login = driver.find_element(By.ID, 'headerLoginButton')
 login.click()
 time.sleep(1)
 
